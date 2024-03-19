@@ -1,0 +1,37 @@
+body {
+    background-image: url(https://speedmetals.com/wp-content/uploads/2017/02/SpeedMetals-MetalTexture-Feb17.jpg);
+    background-size: cover;
+    font-family: Urban;
+}
+
+button{
+    border-radius: 0.63vw;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.3s;
+}
+
+button:hover{
+    box-shadow: 0vw 0vw 1.3vw white;
+}
+
+@font-face{
+    src: url(sefontzeroes.otf);
+    font-family: Urban;
+}
+
+/* Page Two Page Selectors - Ethan. */
+
+[pageselector] {
+    width: 73.3430%;
+    height: 13.43vw;
+    background-color: blue;
+    margin: 1.3vw;
+    grid-column: span 2;
+}
+
+[pageselector]:nth-child(5) {
+    grid-column: 2 / span 2;
+}
+
+pre {
+    font-family: Urban;
+}
