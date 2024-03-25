@@ -23,9 +23,17 @@ button:hover{
 [pageselector] {
     width: 73.3430%;
     height: 13.43vw;
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.253);
     margin: 1.3vw;
     grid-column: span 2;
+    border-style: ridge;
+    border-width: 0.53vw;
+    border-color: rgba(0, 0, 0, 0.521);
+    text-align: center;
+    font-size: 3.3vh;
+    font-family: RegBold;
+    text-shadow: 0 0 1.13vw white, 0 0 0.93vw black, 0 0 0.23vw rgb(0, 255, 213);
+    line-height: 13.43vw;
 }
 
 [pageselector]:nth-child(5) {
@@ -34,4 +42,42 @@ button:hover{
 
 pre {
     font-family: Urban;
+}
+
+@font-face {
+    src: url(SairaCondensed-Regular.ttf);
+    font-family: Reg;
+}
+
+[regfont] {
+    font-family: Reg;
+}
+
+@font-face {
+    src: url(SairaCondensed-ExtraBold.ttf);
+    font-family: RegBold;
+}
+
+[regfontbold] {
+    font-family: RegBold;
+}
+
+@keyframes ad {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.053);}
+    100% {transform: scale(1);}
+}
+
+[ad] {
+    animation-name: ad;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 0 1.3vw white;
+    margin: 2.3vw;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
+}
+
+[ad]:hover {
+    box-shadow: 0 0 2.3vw 1.3vw white;
 }

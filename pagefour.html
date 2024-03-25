@@ -8,7 +8,7 @@
     </head>
     <body>
         <div style="background-color: rgba(0, 0, 0, 0.603); width: 100%; height: 100%; position: fixed;
-        top: 0; left: 0; z-index: 1;" modal>
+        top: 0; left: 0; z-index: 1; display: none;" modal>
             <span style="position: fixed; right: 0.63vw; top: 0; color: red; font-size: 3.3vw;" onclick="closeModl()"> X </span>
         </div>
         <p style="font-size: 5.234343vh; text-indent: 2.3vw; color: rgb(5, 33, 66);  text-shadow: 0 0 2.143vw rgb(255, 255, 255), -0.13vw -0.13vw rgb(0, 18, 66),  -0.13vw 0.13vw rgb(0, 0, 0), 0 0 0.343vw white; line-height: 0.13vh;">Mass Transit</p>
@@ -17,12 +17,14 @@
                 <span style="font-size: 4.3vh; color: white; position: absolute;">
                     Metro
                 </span>
-                <div style="width: 60%; height: 100%; position: relative; left: 19.3vw; top: 0; background-color: black; display: grid; color: white; grid-template-columns: auto auto;">
-                    <div style="margin: 1.3vw;">
-                        This is demo text. Blah blah blah. In Airplane right now.
+                <img src="metro.webp" style="left: 0; bottom: 0; width: 18.3vw; position: absolute;">
+                <div style="width: 60%; height: 100%; position: relative; left: 19.3vw; top: 0; background-color: rgba(0, 0, 0, 0.425); display: grid; color: white; grid-template-columns: auto auto; overflow: hidden;">
+                    <div style="margin: 1.3vw; font-size: 1.63vh; overflow: hidden;">
+                        <p style="position: relative;">Metros/Subways are/can be considered the most efficient ways to travel by public transit, let alone any form of transportation in temrs of resource usage, expenses, and even physical health. Physical Health, how? Well, leave your residence, walk to the metro,</p>
                     </div>
-                    <div style="margin: 1.3vw;">
-                        First Crumble your Arsenic. In a glass of narcotic. Two spoons of purgative. Boiled over high heat. Hoho! I will put in three!
+                    <div style="margin: 1.3vw; font-size: 1.63vh;">
+                        <p>ride to your destination, and then walk a little to your final destination. You don't have to walk all the way to yoir final destination, but you still get a fair amount of walking in.
+                        If work if your final destination, and you go to and back from work about 5-6 days every week/5-6 days every week, then you'd be getting a good amount of walking in and getting to yourse destinationa at the same time! It's multitaskign.</p>
                     </div>
                 </div>
             </div>
@@ -30,14 +32,27 @@
                 <span style="font-size: 4.3vh; color: white; position: absolute; text-align: right; right: 0;">
                     Bus
                 </span>
-                <div style="width: 25.3vw; height: 100%; background-color: white; position: relative;">
-
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/LT_471_(LTZ_1471)_Arriva_London_New_Routemaster_(19522859218).jpg/1200px-LT_471_(LTZ_1471)_Arriva_London_New_Routemaster_(19522859218).jpg" style="position: absolute; bottom: 0; right: 0; width: 20.3vw;">
+                <div style="width: 25.3vw; height: 100%; background-color: rgba(255, 255, 255, 0.432); position: relative;">
+                    <div style="padding: 1.3vw; overflow: hidden;">
+                        <p style="position: relative;">Affordable and enviorment friendly. Why wouldn't you want to travel by bus. Wide and spacious seats, and a comfortable interior. Vehicles that can be fixed quickly and easily. Can it get more convinietnt?</p>
+                    </div>
                 </div>
             </div>
-            <div masstransit="negative:car"></div>
+            <div masstransit="negative:car" style="display: grid; justify-items: center; align-items: center;">
+                <span style="font-size: 2.3vh; color: white; position: absolute; text-align: right; right: 0;">
+                    Mass Transit
+                </span>
+                <img src="https://otiglobal.com/wp-content/uploads/2020/12/Infographic_Mass-Transit_v02-01-1.jpg" style="width: 40%;
+                animation-name: info;
+                animation-duration: 3.3s;
+                animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                animation-iteration-count: infinite;
+                box-shadow: 0 0 0 black;">
+            </div>
         </div>
-        <div videopull onclick="openModl()">
-            Clock Text
+        <div videopull onclick="openModl()" style="font-family: RegBold; z-index: 3; font-size: 3.3vh;">
+            View Video
         </div>
         <div bottomarea>
             <div style="background-color: transparent;">
@@ -49,6 +64,7 @@
             <div style="background-color:rgba(180, 180, 180, 0.123);">
                 <h4 style="line-height: 0.3vh; font-size: 2.3vh; text-align: right; text-indent: 1.3vw; color: white;
                 text-shadow: 0 0 0.3vw white;">What is Mass Transit?</h4>
+                <p style="color: white; text-align: right;">Mass transit is the transportation of large amounts of people by vehicles such as buses, trains, etc.</p>
             </div>
         </div>
     </body>

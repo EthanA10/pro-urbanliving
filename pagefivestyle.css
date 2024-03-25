@@ -1,0 +1,90 @@
+[block] {
+    backdrop-filter:  blur(0.3vw);
+    border-style: ridge;
+    border-width: 0.63vw;
+    border-color: rgba(0, 0, 0, 0.295);
+    box-sizing: border-box;
+}
+
+[block="1"] {
+    width: 75%;
+    height: 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 91, 91, 0.507);
+}
+
+[block="2"] {
+    width: 25%;
+    height: 75%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(107, 82, 107, 0.247);
+}
+
+[block="3"] {
+    width: 75%;
+    height: 25%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(178, 178, 255, 0.315);
+}
+
+[block="4"] {
+    width: 25%;
+    height: 75%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 172, 255, 0.404);
+}
+
+[block]:hover {
+    border-color: white;
+}
+
+[middlesection] {
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    left: 25%;
+    top: 25%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+#fci1 {
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: rotate(360deg);
+}
+
+#fci2 {
+    animation-name: skew;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: rotateY(360deg);
+}
+
+@keyframes rotate {
+    from{transform: rotate(0deg)};
+    to{transform: rotate(360deg)};
+}
+
+/*
+@keyframes size {
+    from{transform: scale(0.3vw)};
+    to{transform: scale(1.3vw)};
+}
+*/
+
+@keyframes skew {
+    from{transform: rotateY(0deg)};
+    to{transform: rotateY(360deg)};
+}
