@@ -4,6 +4,10 @@
     border-width: 0.63vw;
     border-color: rgba(0, 0, 0, 0.295);
     box-sizing: border-box;
+    font-size: 2.3vh;
+    text-indent: 1.3vw;
+    padding: 1.3vw;
+    text-shadow: 0 0 0.23vw white;
 }
 
 [block="1"] {
