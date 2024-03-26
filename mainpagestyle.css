@@ -22,7 +22,7 @@ button:hover{
 
 [pageselector] {
     width: 73.3430%;
-    height: 13.43vw;
+    height: 7.43vw;
     background-color: rgba(0, 0, 255, 0.253);
     margin: 1.3vw;
     grid-column: span 2;
@@ -33,7 +33,7 @@ button:hover{
     font-size: 3.3vh;
     font-family: RegBold;
     text-shadow: 0 0 1.13vw white, 0 0 0.93vw black, 0 0 0.23vw rgb(0, 255, 213);
-    line-height: 13.43vw;
+    line-height: 7.43vw;
 }
 
 [pageselector]:nth-child(5) {
@@ -76,8 +76,21 @@ pre {
     box-shadow: 0 0 1.3vw white;
     margin: 2.3vw;
     transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
+    transform: scale(1);
 }
 
 [ad]:hover {
     box-shadow: 0 0 2.3vw 1.3vw white;
+    transform: scale(1.3);
+    animation-name: adsizeup;
+    animation-duration: 2.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin: 5.3vw;
+}
+
+@keyframes adsizeup {
+    0% {transform: scale(1.3);}
+    50% {transform: scale(1.453);}
+    100% {transform: scale(1.3);}
 }

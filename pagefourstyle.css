@@ -21,7 +21,7 @@
     background-color:rgba(106, 108, 114, 0.466);
     grid-row: 4 / 2;
     width: 100%;
-    height: 100%;
+    height: 30.3vh;
 }
 [masstransit="negative:car"]{
     background-color:rgba(78, 52, 52, 0.247);

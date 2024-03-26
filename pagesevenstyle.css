@@ -11,6 +11,8 @@
     display: grid;
     justify-items: center;
     align-items: center;
+    height: 94.3vh;
+    overflow-y: auto;
 }
 
 [third]:hover {
@@ -24,4 +26,14 @@
 h1 {
     color: black;
     transition: ease 0.3s;
+}
+
+::-webkit-scrollbar {
+    background-color: rgba(216, 216, 216, 0.404);
+    border-radius: 1.3vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.493);
+    border-radius: 1.3vw;
 }
